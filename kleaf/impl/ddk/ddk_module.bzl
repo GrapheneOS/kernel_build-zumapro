@@ -220,6 +220,9 @@ def ddk_module(
         hdrs: See [`ddk_headers.hdrs`](#ddk_headers-hdrs)
         includes: See [`ddk_headers.includes`](#ddk_headers-includes)
         linux_includes: See [`ddk_headers.linux_includes`](#ddk_headers-linux_includes)
+
+          Unlike `ddk_headers.linux_includes`, `ddk_module.linux_includes` is **NOT**
+          applied to dependent `ddk_module`s.
         kernel_build: [`kernel_build`](#kernel_build)
         conditional_srcs: A dictionary that specifies sources conditionally compiled based on configs.
 

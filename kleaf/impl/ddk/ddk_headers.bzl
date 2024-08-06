@@ -164,6 +164,8 @@ You still need to add the actual header files to `hdrs`.
 
 Setting this attribute allows you to override headers from `${KERNEL_DIR}`. See "Order of includes"
 in [`ddk_module`](#ddk_module) for details.
+
+Like `includes`, `linux_includes` is applied to dependent `ddk_module`s.
 """,
         ),
     },
